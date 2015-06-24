@@ -22,7 +22,7 @@ doc.css("div #comments > div").each do |div|
   end
 end
 
-print keys.keys.join(", ")
+print keys.keys.join("\t ")
 puts ""
 
 data.each do |record|
@@ -30,6 +30,6 @@ data.each do |record|
   keys.keys.each do |key|
     tmp_a << record[key]
   end
-  print tmp_a.join(", ")
+  print tmp_a.join("\t ")
   puts ""
 end
